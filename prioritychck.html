@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="prioritycheck.css">
+</head>
+
+<body>
+    <div class="cont">
+        <!-- LEFT PANEL: input + mood + priority -->
+        <div class="left-panel">
+            <h1 class="gold-shimmer">AuraPrior</h1>
+            <div class="input">
+                <input type="text" placeholder="what's in your mind ...??" id="textspace">
+                <input type="button" value="ADD" id="addbut" class="gold-shimmer">
+                <input type="button" value="SORT" id="sortbut" class="gold-shimmer">
+            </div>
+            <div class="mood">
+                <h3>what's your mood..??</h3>
+                <div class="div">
+                    <p class="em">😊</p>
+                    <p class="em">😭</p>
+                    <p class="em">😡</p>
+                    <p class="em">😌</p>
+                    <p class="em">🙄</p>
+                    <p class="em">🤫</p>
+                </div>
+            </div>
+            <div class="priority">
+                <h3>SELECT PRIORITY: </h3>
+                <div class="colors">
+                    <p class="colorpall red"></p>
+                    <p class="colorpall yellow"></p>
+                    <p class="colorpall blue"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT PANEL: tasks by priority -->
+        <div class="right-panel tasks">
+            <div class="high inner">
+                <h3>high</h3>
+            </div>
+            <div class="mod inner">
+                <h3>mod</h3>
+            </div>
+            <div class="low inner">
+                <h3>low</h3>
+            </div>
+        </div>
+    </div>
+
+
+   <script src="prioritycheck.js"></script>
+</body>
+
+</html>

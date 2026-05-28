@@ -1,0 +1,298 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', sans-serif;
+    color: #1f1f1f;
+}
+
+.cont {
+    min-height: 100vh;
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 25px;
+    background-color: #e0e0e0;
+    box-shadow: 12px 12px 24px #bebebe, -12px -12px 24px #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 35px;
+    flex-wrap: wrap;
+    border: 2px solid gold;
+}
+
+.left-panel {
+    flex: 1;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.right-panel {
+    flex: 2;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cont h1 {
+    font-size: 3.5rem;
+    color: #1f1f1f;
+    text-shadow: 1px 1px 1px #fff;
+    margin-bottom: 15px;
+}
+
+.input {
+    border-radius: 50px;
+    background: #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: inset 5px 5px 15px #bebebe, inset -5px -5px 15px #ffffff;
+}
+
+.input input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    width: 70%;
+    background: transparent;
+    font-size: 1.05rem;
+    color: #1f1f1f;
+}
+
+.input input[type="button"] {
+    padding: 12px 25px;
+    border-radius: 30px;
+    background: linear-gradient(to right, #fffacd, #f9f295);
+    color: #000;
+    border: none;
+    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: bold;
+}
+
+.input input[type="button"]:active {
+    box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+}
+
+.mood, .priority {
+    padding: 20px;
+    border-radius: 20px;
+    background: #e0e0e0;
+    box-shadow: inset 6px 6px 12px #bebebe, inset -6px -6px 12px #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.mood h3, .priority h3 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #1f1f1f;
+    font-weight: 600;
+}
+
+.div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+    padding-right: 5px;
+    scroll-behavior: smooth;
+}
+
+.tasks li {
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 22px;
+    background-color: #e0e0e0;
+    box-shadow: 6px 6px 14px #bebebe, -6px -6px 14px #ffffff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tasks li:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 0px 12px #333;
+}
+
+.task {
+    flex-grow: 1;
+    font-size: 1.15rem;
+    color: #1f1f1f;
+}
+
+.emoji {
+    font-size: 1.3rem;
+    margin-inline-end: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.emoji:hover {
+    transform: scale(1.3);
+}
+
+.but {
+    border-radius: 1rem;
+    margin-inline-end: 10px;
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    background-color: #e0e0e0;
+    box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.but:active {
+    box-shadow: inset 4px 4px 8px #bebebe, inset -4px -4px 8px #ffffff;
+}
+
+.inner {
+    width: 100%;
+    border-radius: 1rem;
+    border: 1.5px solid gold;
+    box-shadow: inset 5px 5px 12px #bebebe, inset -5px -5px 12px #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    min-height: 27vh;
+    background-color: #f8f8f8;
+}
+
+.inner h3 {
+    font-size: 1.25rem;
+    color: #222;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.colors {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 20px;
+}
+
+.colors p {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.tasks li {
+    border-radius: 20px;
+    width: 100%;
+    display: flex; /* already present ✅ */
+    flex-direction: row; /* 👈 Make sure it's in row */
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 22px;
+    background-color: #e0e0e0;
+    box-shadow: 6px 6px 14px #bebebe, -6px -6px 14px #ffffff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    gap: 10px; /* 👈 Add spacing between children */
+    flex-wrap: nowrap; /* 👈 Prevent wrapping */
+}
+
+
+.colors p:hover {
+    transform: scale(1.2);
+    box-shadow: 2px 2px 5px #bebebe, -2px -2px 5px #ffffff;
+}
+
+.red {
+    background-color: #ff4d4d;
+}
+
+.yellow {
+    background-color: #ffeb3b;
+}
+
+.blue {
+    background-color: #42a5f5;
+}
+.em{
+    transition: all 1s ease;
+}
+.em:hover{
+    transform: scale(1.3);
+    animation: shake 1s linear ;
+    cursor: pointer;
+    
+
+}
+/* Gold shimmer border animation */
+@keyframes shimmer-border {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+.gold-shimmer {
+    position: relative;
+    z-index: 1;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gold-shimmer::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: linear-gradient(120deg, #FFD700, #fff8dc, #FFA500, #FFD700);
+    background-size: 300% 300%;
+    animation: shimmer-border 2s linear infinite;
+    filter: brightness(1.4) saturate(1.5) drop-shadow(0 0 4px gold);
+    z-index: -1;
+    pointer-events: none;
+
+    /* Improved masking for inner border glow effect */
+   
+    mask-composite: exclude;
+}
+
+
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(3deg); }
+    50% { transform: rotate(-3deg); }
+    75% { transform: rotate(3deg); }
+    100% { transform: rotate(0deg); }
+}
