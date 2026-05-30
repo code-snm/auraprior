@@ -10,12 +10,12 @@ A modern and responsive productivity web application designed to help users mana
 * Clean navigation bar
 * React-based component architecture
 * Fast and lightweight frontend
+* sort functionality
 
 ## 🛠️ Tech Stack
 
 * React.js
 * JavaScript
-* Bootstrap
 * HTML5
 * CSS3
 
