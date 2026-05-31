@@ -2,6 +2,7 @@
 
 A modern and responsive productivity web application designed to help users manage tasks efficiently with a clean UI and smooth user experience.
 
+
 ## 🚀 Features
 
 * Add, delete, and manage tasks
@@ -22,14 +23,12 @@ A modern and responsive productivity web application designed to help users mana
 ## 📂 Project Structure
 
 ```bash
-src/
- ├── components/
- │    ├── Header.js
- │    ├── Todo.js
- │    └── ...
- ├── App.js
- ├── index.js
- └── ...
+Testing/
+ ├── priority/
+ │    ├── index.html
+ │    ├── prioritycheck.css
+ │    └── prioritycheck.js
+ 
 ```
 
 ## ⚙️ Installation
