@@ -22,7 +22,6 @@ A modern and responsive productivity web application designed to help users mana
 
 ## 📂 Project Structure
 
-
 ```bash
 Testing/
  ├── priority/
